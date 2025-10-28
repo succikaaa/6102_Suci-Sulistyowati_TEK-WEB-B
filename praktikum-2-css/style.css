@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e8eaf6 0%, #f5f5f5 100%);
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #2196F3;
+    background: linear-gradient(135deg, #1976D2 0%, #42A5F5 100%);
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+}
+
+.profile-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: #fff;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    color: #2d5b81;
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 60;
+}
+
+h2 {
+    color: #2196F3;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.about-text {
+    color: #666;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.project-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #2196F3;
+    background: #f8f9ff;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.project-item:hover {
+    background: #e3f2fd;
+    border-left-width: 6px;
+}
+
+.project-item:last-child {
+    margin-bottom: 0;
+}
+
+.project-title {
+    color: #2196F3;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.project-desc {
+    color: #666;
+    font-size: 15px;
+}
+
+.contact-info {
+    color: #666;
+    line-height: 2;
+    font-size: 16px;
+}
+
+.contact-info a {
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #1976D2;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
